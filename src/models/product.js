@@ -51,6 +51,10 @@ const productSchema = new Schema(
       type: Boolean,
       default: false,
     },
+    ratings: [{
+      type: ObjectId,
+      ref: "Rating"
+    }]
 
   },
   { timestamps: true }
