@@ -14,8 +14,13 @@ dotenv.config()
 
 // initialize express server
 const app = express ()
+
 app.use(express.json())
-app.use(cors(["http://http://localhost:5173","http://http://localhost:5174"]))
+
+let corsOptions = {
+    origin : ["http://http://localhost:5173","http://http://localhost:5174", "http://http://localhost:5174", "https://fragrance-web-hub.vercel.app"],
+}
+app.use(cors(corsOptions));
 
 app.use(morgan("dev"));
 
