@@ -18,7 +18,7 @@ const app = express ()
 app.use(express.json())
 
 let corsOptions = {
-    origin : ["http://http://localhost:5173","http://http://localhost:5174", "http://http://localhost:5174", "https://fragrance-web-hub.vercel.app"],
+    origin : ["http://http://localhost:5173","http://http://localhost:5174", "http://http://localhost:5174", "https://fragrance-web-hub.vercel.app", "https://fragranceh-hub-daniel.vercel.app/"],
 }
 app.use(cors(corsOptions));
 
